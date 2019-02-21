@@ -1,0 +1,11 @@
+0GRAPHICS17:SETCOLOR 0,0,14:SETCOLOR1,7,4:SETCOLOR2,1,14:SETCOLOR3,2,4
+1SETCOLOR4,0,0:B=PEEK(88)+PEEK(89)*256:O=B+59:D=B+460:P=B+210:q=0.95:FORI=0TO19:POKEO-I,13+64:POKED+I,13+64:NEXTI
+2POSITION 0,1:PRINT #6;"  ooo  mines ooo  ": M=47:H=10+192:W=4+128: G=b: if j>r then r=j: j=0 
+3Y=0:POSITION 0,0:PRINT #6;chr$(255-91);" ";9-F;" PTS ";J;" HI ";R
+4IF PEEK(P)=W THEN J=J+4:IF F>0 THEN F=F-1
+5ifrnd(1)>q thenx=p-4+2*int(rnd(1)*5)+40*(int(rnd(1)*3)-1):pokex,m
+6pokep,h:S=PEEK(764):POKE 764,9:IFS<>9THENC=20*((s=5)-(s=13))+(s=0)-(s=1):ifc<>0thenPOKEP,M:P=P+c:J=J+1:Y=1
+7POKE G,W: G=b: IF Y=1 THEN IF INT(J/4)=J/4 THENG=O+1+INT(RND(0)*380):POKE G,11+64
+8ifS=33andf<9thenpokep-1,0:pokep+1,0:pokep-20,0:pokep+20,0:f=f+1:pokep,11+64
+9ON((peek(p)<>m)and(p>o)and(p<d)) GOTO3:clr:goto 0
+
