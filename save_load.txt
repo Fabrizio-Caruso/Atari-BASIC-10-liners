@@ -1,0 +1,16 @@
+
+Save tokenized
+SAVE"H1:mplus.bas"
+
+Load tokenized
+LOAD"H1:mplus.bas"
+
+Export
+LIST"H1:mplus.ext"
+LIST"H6:mplus.ext"
+
+
+Input
+ENTER"H6:mplus.ext"
+
+
