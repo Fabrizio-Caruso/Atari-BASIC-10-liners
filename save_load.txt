@@ -3,14 +3,15 @@ Save tokenized
 SAVE"H1:mplus.bas"
 
 Load tokenized
+File -> Boot Image
 LOAD"H1:mplus.bas"
 
-Export
-LIST"H1:mplus.ext"
+
+Save listing
 LIST"H6:mplus.ext"
 
 
-Input
+Load listing
 ENTER"H6:mplus.ext"
 
 
